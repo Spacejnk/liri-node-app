@@ -1,0 +1,30 @@
+/* body 
+{
+    background-color: rgb(162, 138, 156);
+} */
+
+.app-name {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+}
+.search-container {
+    max-width: 60%;
+    margin-top: 100px;
+    margin-left: -5px;
+}
+
+.navbar {
+    border-radius: 10px;
+    height: 150px;
+}
+
+.search-hover:hover {
+    color: orange;
+}
+
+.input-field {
+    padding: 0px;
+    max-width: 100%;
+}
