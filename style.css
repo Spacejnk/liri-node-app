@@ -10,14 +10,14 @@
     font-style: oblique;
 }
 .search-container {
-    max-width: 60%;
+    max-width: 80%;
     margin-top: 100px;
     margin-left: -5px;
 }
 
 .navbar {
     border-radius: 10px;
-    height: 150px;
+    height: 220px;
 }
 
 .search-hover:hover {
@@ -27,4 +27,8 @@
 .input-field {
     padding: 0px;
     max-width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 10px;
 }
