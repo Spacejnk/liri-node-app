@@ -1,0 +1,182 @@
+**********SONG INFO*********
+0
+song name: Ambitionz Az A Ridah
+preview song: https://p.scdn.co/mp3-preview/bca8fee668f3bd06c8e0d30565050b757ebb1268?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+1
+song name: Tupac
+preview song: null
+album: Baby On Baby
+artist(s): DaBaby
+*****************************
+**********SONG INFO*********
+2
+song name: All Eyez On Me
+preview song: https://p.scdn.co/mp3-preview/3314dc874000f7f45b28b29931e4ceb2249cb195?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+3
+song name: Hit 'Em Up - Single Version
+preview song: null
+album: Greatest Hits
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+4
+song name: California Love - Original Version
+preview song: null
+album: The Best of 2Pac - Pt. 1: Thug
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+5
+song name: I Get Around
+preview song: null
+album: Strictly 4 My N.I.G.G.A.Z...
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+6
+song name: Dear Mama
+preview song: null
+album: Me Against The World
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+7
+song name: Keep Ya Head Up
+preview song: null
+album: Strictly 4 My N.I.G.G.A.Z...
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+8
+song name: Do For Love
+preview song: null
+album: R U Still Down? [Remember Me]
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+9
+song name: Only God Can Judge Me
+preview song: https://p.scdn.co/mp3-preview/82dfdfc93ef46260664b2ee40e517895f8e65d00?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+10
+song name: California Love - Original Version
+preview song: null
+album: Greatest Hits
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+11
+song name: Changes
+preview song: null
+album: Greatest Hits
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+12
+song name: How Do You Want It
+preview song: https://p.scdn.co/mp3-preview/ff7b4e70c14d40b15b13c659ee76af1c425d2c37?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+13
+song name: Hail Mary
+preview song: null
+album: Greatest Hits
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+14
+song name: All About U
+preview song: https://p.scdn.co/mp3-preview/e9839e9e8a92fd04df8a2ec3ce3da98dd399d728?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+15
+song name: Can't C Me
+preview song: https://p.scdn.co/mp3-preview/08e41c937fd65c7be2f149faf857f17adac71d11?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+16
+song name: Smile
+preview song: null
+album: Greatest Hits
+artist(s): Scarface
+*****************************
+**********SONG INFO*********
+17
+song name: So Many Tears
+preview song: null
+album: Me Against The World
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+18
+song name: 2 Of Amerikaz Most Wanted
+preview song: https://p.scdn.co/mp3-preview/fdda4198a8d94fa83fb498f4dd6493072b84ffa1?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+19
+song name: Ghetto Gospel
+preview song: null
+album: Loyal To The Game
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+0
+song name: Ambitionz Az A Ridah
+preview song: https://p.scdn.co/mp3-preview/bca8fee668f3bd06c8e0d30565050b757ebb1268?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+1
+song name: Tupac
+preview song: null
+album: Baby On Baby
+artist(s): DaBaby
+*****************************
+**********SONG INFO*********
+0
+song name: Ambitionz Az A Ridah
+preview song: https://p.scdn.co/mp3-preview/bca8fee668f3bd06c8e0d30565050b757ebb1268?cid=2d8887942dd7463e8315102df1bc9651
+album: All Eyez On Me
+artist(s): 2Pac
+*****************************
+**********SONG INFO*********
+1
+song name: Tupac
+preview song: null
+album: Baby On Baby
+artist(s): DaBaby
+*****************************
+**********SONG INFO*********
+0
+song name: Dragostea Din Tei - Original Italian Version
+preview song: https://p.scdn.co/mp3-preview/01cf0b3828235cd81ebd608ef1d0d0bc258d83cc?cid=2d8887942dd7463e8315102df1bc9651
+album: Ma Ya Hi (Dragostea Din Tei) [English Mixes]
+artist(s): O-Zone
+*****************************
+**********SONG INFO*********
+1
+song name: Energy
+preview song: https://p.scdn.co/mp3-preview/632d2699d9d4f57c1c70fd0ad984830f24ca45cf?cid=2d8887942dd7463e8315102df1bc9651
+album: Energy
+artist(s): Sampa the Great
+*****************************

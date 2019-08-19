@@ -17,7 +17,7 @@ var keys = require("./keys.js");
 
 var fs = require('fs');
 var readMe = fs.readFileSync('random.txt', 'utf8');
-console.log(readMe);
+// console.log(readMe);
 
 //------------------------------------ 
 
@@ -39,6 +39,7 @@ console.log(readMe);
 //   .finally(function () {
 //     // always executed
 //   });
+var artistChoice = process.argv[2];
 
 var Spotify = require('node-spotify-api');
  
@@ -47,10 +48,16 @@ var spotify = new Spotify({
   secret: 'b96cad0de3984e0a95be833a1cce376b'
 });
  
-spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
+spotify.search({ type: 'artist', query: artistChoice, limit: 3}, function(err, data) {
   if (err) {
     return console.log('Error occurred: ' + err);
   }
- 
-console.log(data); 
+
+  const results = data.artists;
+  const artists = results.items;
+
+  for (let i = 0 ; i < artists.length ; i++) {
+    console.log(artists[i].name);
+  }
+
 });
