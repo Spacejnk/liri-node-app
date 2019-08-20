@@ -17,8 +17,8 @@ var userInputChoice = process.argv[2];
 // spotify-this-song function
 function spotifyThisSong(userInputChoice) {
 var spotify = new Spotify({
-id:  "2d8887942dd7463e8315102df1bc9651",
-secret:  "b96cad0de3984e0a95be833a1cce376b"
+id:  SPOTIFY_ID,
+secret:  SPOTIFY_ID
 });
 
 // Spotify Error Needs Work
@@ -157,8 +157,15 @@ function liriBot() {
 
 };
 // ---------------------
+
 liriBot();
 
  function doWhatItSays() {
+
+  
+    
+
+
+
   console.log(readMe);
 }
