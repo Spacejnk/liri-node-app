@@ -1,19 +1,18 @@
-// At the top of the liri.js file, add code to read and set any environment variables with the dotenv package:
+// require .env file
 require("dotenv").config();
+// require npm
 var axios = require("axios");
-var keys = require("./keys.js");
 var moment = require("moment");
+// link and require keys file
+var keys = require("./keys.js");
+// require fs
 var fs = require('fs');
-var readMe = fs.readFileSync('random.txt', 'utf8');
-
+//var readMe = fs.readFile('random.txt', 'utf8');
+// userInputChoice 3rd and 4th argument
 var userInputChoice = process.argv[2];
-
-// Not working yet -- from ReadMe instructions Aug 14th 2019
-//var spotify = new Spotify(keys.spotify);
-
+var anotherArgu = process.argv[3];
+var Spotify = require('node-spotify-api');
 // -------------------------------------------------- spotify.search
- var Spotify = require('node-spotify-api');
-//spotifyThisSong(userInputChoice);
 // spotify-this-song function
 function spotifyThisSong(userInputChoice) {
   if (!userInputChoice) {
@@ -25,7 +24,7 @@ function spotifyThisSong(userInputChoice) {
   });
 
   // Spotify Error Needs Work
-  spotify.search({ type: 'artist', query: userInputChoice, limit: 5}, function(err, data) {
+  spotify.search({ type: "artist" , query: userInputChoice, limit: 5}, function(err, data) {
 
 
     if (err) {
@@ -39,8 +38,7 @@ function spotifyThisSong(userInputChoice) {
     for (let i = 0 ; i < artists.length ; i++) {
       console.log(artists[i].name);
     };
-
-    
+ 
   });
 
 };
@@ -98,9 +96,8 @@ axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy"
   });
 
 };
-
 //---------------------------------
-  
+//concertThis(userInputChoice);
 function concertThis(userInputChoice) {
   let concertQueryURL = "https://rest.bandsintown.com/artists/" + userInputChoice + "/events?app_id=codingbootcamp";
   axios.get(concertQueryURL).then(
@@ -131,14 +128,10 @@ function concertThis(userInputChoice) {
      
         console.log("Error, no name or locations.", error.message);
       }
-      console.log(error.config);
+        console.log(error.config);
   });
 };
-
 //--------------------
-//concertThis(userInputChoice);
-var anotherArgu = process.argv[3];
-
 function liriBot() {
   
   switch (userInputChoice) {
@@ -157,20 +150,29 @@ function liriBot() {
   
   case "do-what-it-says":
     doWhatItSays();
+
     break;
-  }
+
+  default: 
+      console.log("Invalid word choice. Try 'node liri.js' and any --case-- name above with title of movie or concert or song." + " Like so -->" + " node liri movie-this x-men  <--or with quotes if choice has more than one word-->  'The Lion King'  <--");
+  };
 
 };
-// ---------------------
-
 liriBot();
 
- function doWhatItSays() {
+// line 9 
+ function doWhatItSays(){
 
-  // parse it put in a function
-    
+  fs.readFile('random.txt', "utf8", function(error, data){
+    if (error) throw error
+    var showWhatIsSays = data.split(',');
+    process.argv[3] = showWhatIsSays[1]
+    console.log(showWhatIsSays[1])
+    //spotifyThisSong("Bob Marley");
+  
+  });
 
+  
+ }
 
-
-  console.log(readMe);
-}
+ 
