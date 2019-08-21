@@ -16,29 +16,32 @@ var userInputChoice = process.argv[2];
 //spotifyThisSong(userInputChoice);
 // spotify-this-song function
 function spotifyThisSong(userInputChoice) {
-var spotify = new Spotify({
-id:  SPOTIFY_ID,
-secret:  SPOTIFY_ID
-});
+  if (!userInputChoice) {
+    throw 'You need to pass an artist to look for.';
+  }
+  var spotify = new Spotify({
+    id:  keys.spotify.id,
+    secret:  keys.spotify.secret
+  });
 
-// Spotify Error Needs Work
-spotify.search({ type: 'artist', query: userInputChoice, limit: 5}, function(err, data) {
+  // Spotify Error Needs Work
+  spotify.search({ type: 'artist', query: userInputChoice, limit: 5}, function(err, data) {
 
 
-  if (err) {
-    return console.log('Error occurred: ' + err);
+    if (err) {
+      return console.log('Error occurred: ' + err);
+      
+    } 
     
-  } 
-  
-  const results = data.artists;
-  const artists = results.items;
+    const results = data.artists;
+    const artists = results.items;
 
-  for (let i = 0 ; i < artists.length ; i++) {
-    console.log(artists[i].name);
-  };
+    for (let i = 0 ; i < artists.length ; i++) {
+      console.log(artists[i].name);
+    };
 
-  
-});
+    
+  });
 
 };
 
@@ -47,9 +50,9 @@ var mrNobody = "If you haven't watched 'Mr. Nobody,' then you should: http://www
 var netflix = "It's on Netflix!";
 // Function movieThis
 //movieThis(userInputChoice);
-function movieThis(userInputChoice){
+function movieThis(movie){
 //var userInputChoice = process.argv[2];
-axios.get("http://www.omdbapi.com/?t=" + userInputChoice + "&y=&plot=short&apikey=trilogy").then(
+axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy").then(
   function(response) {
 
     
@@ -102,11 +105,13 @@ function concertThis(userInputChoice) {
   let concertQueryURL = "https://rest.bandsintown.com/artists/" + userInputChoice + "/events?app_id=codingbootcamp";
   axios.get(concertQueryURL).then(
     function(response) {
-      for (let i = 0; i < 3; i++) {
+      let concerts = response.data;
+      concerts = concerts.slice(0,3);
+      for (let i = 0; i < concerts.length; i++) {
         console.log("-------------------------------searchBandsInTown-------------------------------");
-        console.log("Venue: " + response.data[i].venue.name);
-        console.log("Location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-        console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+        console.log("Venue: " + concerts[i].venue.name);
+        console.log("Location: " + concerts[i].venue.city + ", " + concerts[i].venue.country);
+        console.log("Date: " + moment(concerts[i].datetime).format("MM/DD/YYYY"));
       }
     })
     .catch(function(error) {
@@ -136,17 +141,17 @@ var anotherArgu = process.argv[3];
 
 function liriBot() {
   
-  switch (anotherArgu, userInputChoice) {
+  switch (userInputChoice) {
   case "movie-this":
-    movieThis(anotherArgu,userInputChoice);
+    movieThis(anotherArgu);
     break;
   
   case "concert-this":
-    concertThis(anotherArgu,userInputChoice);
+    concertThis(anotherArgu);
     break;
   
   case "spotify-this-song":
-    spotifyThisSong(anotherArgu,userInputChoice);
+    spotifyThisSong(anotherArgu);
 
     break;
   
@@ -162,7 +167,7 @@ liriBot();
 
  function doWhatItSays() {
 
-  
+  // parse it put in a function
     
 
 
