@@ -16,29 +16,30 @@ var Spotify = require('node-spotify-api');
 // spotify-this-song function
 function spotifyThisSong(userInputChoice) {
   if (!userInputChoice) {
-    throw 'You need to pass an artist to look for.';
-  }
+    userInputChoice = "The Sign Ace of Base";
+};
   var spotify = new Spotify({
     id:  keys.spotify.id,
     secret:  keys.spotify.secret
   });
 
   // Spotify Error Needs Work
-  spotify.search({ type: "artist" , query: userInputChoice, limit: 5}, function(err, data) {
+  spotify.search({ type: "track" , query: userInputChoice, limit: 1}, function(err, data) {
 
 
     if (err) {
       return console.log('Error occurred: ' + err);
-      
     } 
-    
-    const results = data.artists;
-    const artists = results.items;
-
-    for (let i = 0 ; i < artists.length ; i++) {
-      console.log(artists[i].name);
-    };
- 
+   
+    console.log("---------------------------------------------------");
+    console.log("Artist(s): " + data.tracks.items[0].album.artists[0].name);
+    console.log("---------------------------------------------------");
+    console.log("Song: " + data.tracks.items[0].name);
+    console.log("---------------------------------------------------");
+    console.log("Song link by Spotify: " + data.tracks.items[0].album.external_urls.spotify);
+    console.log("---------------------------------------------------");
+    console.log("Album Song is from: " + data.tracks.items[0].album.name);
+    console.log("---------------------------------------------------");
   });
 
 };
