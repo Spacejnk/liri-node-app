@@ -67,7 +67,9 @@ axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy"
       console.log("---------------movie-this---------------");
       console.log("IMDB Rating of the movie: " + response.data.imdbRating);
       console.log("---------------movie-this---------------");
-      console.log("The movie's rating is: " + response.data.Country);
+      console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[2].Value);
+      console.log("---------------movie-this---------------");
+      console.log("The movie's Country is: " + response.data.Country);
       console.log("---------------movie-this---------------");
       console.log("Language of the movie: " + response.data.Language);
       console.log("---------------movie-this---------------");
