@@ -161,21 +161,35 @@ function liriBot() {
   };
 
 };
-liriBot();
+liriBot(doWhatItSays);
 
 // line 9 
- function doWhatItSays(){
+//  function doWhatItSays(){
 
+//   fs.readFile('random.txt', "utf8", function(error, data){
+//     if (error) throw error
+    
+//     var showWhatIsSays = data.split(',');
+//     process.argv[3] = showWhatIsSays[1]
+//     console.log(showWhatIsSays[1])
+//     console.log(liriBot);
+//     //spotifyThisSong("Bob Marley");
+  
+//   });
+
+  
+//  }
+
+function doWhatItSays(){
   fs.readFile('random.txt', "utf8", function(error, data){
-    if (error) throw error
-    var showWhatIsSays = data.split(',');
-    process.argv[3] = showWhatIsSays[1]
-    console.log(showWhatIsSays[1])
-    //spotifyThisSong("Bob Marley");
-  
+      if (error) { 
+          console.log("Error occured: " + error);
+      }
+      var txt = data.toString().split(",");
+      for (var i = 0 ; i < txt.length ; i += 2){
+          liriBot(txt[i], txt[i+1]);
+      }
   });
-
-  
- }
+}
 
  
